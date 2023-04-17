@@ -1,0 +1,86 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');*/
+
+@font-face {
+    font-family: "Circular Std";
+    src: url("/src/assets/circular-std-medium-500.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.trustAnimation {
+    animation-duration: 1s;
+    animation-name: fadeInUp;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.title {
+    color: #111928;
+    font-size: 40px;
+    font-style: normal;
+    /*font-weight: 700;*/
+    line-height: 51px;
+    width: 44%;
+}
+
+.inner {
+    display: flex;
+    width: 47%;
+    flex-direction: column;
+    
+}
+
+.description {
+    color: #4a5873;
+    padding-bottom: 1rem;
+    /*font-family: Circular Std;*/
+    font-size: 1rem;
+    /*font-style: normal;*/
+    font-weight: 450;
+    letter-spacing: 0.2px;
+    line-height: 140%;
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+
+.count {
+    display: flex;
+    flex-direction: column;
+}
+
+.count h1{
+    color: #111928;
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 51px;
+}
+
+.count p {
+    color: #4a5873;
+    font-size: 16px;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 450;
+    letter-spacing: .2px;
+    line-height: 140%;
+}
+
+.header1 span{
+    color: #2ebdb6;
+}

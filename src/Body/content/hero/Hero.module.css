@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+
+.heroMain {
+    background: url("/src/assets/herobg.svg");
+    border-radius: 15px;
+    display: flex;
+    height: 635px;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+}
+
+.content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.9em;
+    margin-top: 117px;
+    padding: 0;
+    width: 47%;
+}
+
+.bigContent {
+    color: #fff;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 32px;
+}
+
+.green {
+    color: #2ebdb6;
+}
+
+.words {
+    color: #f7fdfc;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: .2px;
+    line-height: 140%;
+    margin-bottom: 64px;
+}
+
+.clickable {
+    display: flex;
+    gap: 20px;
+}
+.open{
+   border: white solid 1px;
+}
+
+.clickable a {
+    text-decoration: none;
+    color: #fff;
+ 
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.clickable a:nth-child(1) {
+    background-color: #2ebdb6;
+}
+
+.clickable a:nth-child(2):hover {
+    color: #0d6efd;
+}
+
+.heroImage {
+    margin-left: 120px;
+    margin-top: 50px;
+}

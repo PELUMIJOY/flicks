@@ -1,0 +1,134 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 128px;
+    width: 77%;
+    animation-name: myAnimation;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes myAnimation {
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.left {
+    align-items: center;
+    background: url(/src/assets/starBg.svg);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 47%;
+    height: 532px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 49%;
+}
+
+.join {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 68%;
+}
+
+.join h1 {
+    color: #fff;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    margin-bottom: 22px;
+}
+
+.join p {
+    color: #f7fdfc;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 150.5%;
+    margin-bottom: 34px
+}
+
+.join a {
+    align-items: center;
+    color: #0d6efd;
+    background: #fff;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 29px;
+    justify-content: center;
+    padding: 25px 52px 26px;
+    width: 109px;
+    text-decoration: none
+}
+
+.first {
+    background-color: rgb(234, 248, 248);
+}
+
+.second {
+    background-color: rgb(246, 250, 253);
+}
+
+.third {
+    background-color: rgb(255, 248, 237);
+}
+
+.index {
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    height: 156px;
+    width: 543px;
+}
+
+.image{
+    margin-left: 30px;
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.content h1{
+    color: #111928;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .2px;
+    line-height: 140%;
+}
+
+.content p{
+    color: #666;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: .2px;
+    line-height: 140%;
+}

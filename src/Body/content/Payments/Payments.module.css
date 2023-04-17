@@ -1,0 +1,146 @@
+.left {
+    display: flex;
+}
+
+.section {
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 128px;
+    width: 100%;
+}
+
+.animated {
+    animation-duration: 2s;
+}
+
+.leftSlide {
+    animation-name: leftSlide;
+}
+
+@keyframes leftSlide {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translateZ(0);
+    }
+}
+
+.leftSlide {
+    animation: leftSlide 1s ease-in-out forwards;
+}
+
+.leftSlide img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.leftContent {
+    width: 460px;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.leftContent h1 {
+    color: #111928;
+    margin-bottom: 32px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 51px;
+    font-size: 40px;
+}
+
+.leftContent p {
+    color: #4a5873;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: .2px;
+    line-height: 27px;
+}
+
+.rightContent {
+    width: 460px;
+}
+
+.rightContent h1 {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 32px;
+    line-height: 51px;
+    color: #111928;
+}
+
+.rightContent p {
+    font-size: 18px;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.2px;
+    color: #4a5873;
+}
+
+.rightSlide {
+    animation-name: rightSlide;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    visibility: visible;
+}
+
+@keyframes rightSlide {
+    0% {
+        transform: translate3d(50%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: none;
+    }
+}
+
+.rightContent img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.right {
+    display: flex;
+}
+
+.rightContent span {
+    align-items: center;
+    background: #eaf8f8;
+    border-radius: 20px;
+    color: #2ebdb6;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 450;
+    height: 38px;
+    justify-content: center;
+    line-height: 110%;
+    margin-bottom: 30px;
+    padding: 10px 23px;
+    width: 144px;
+}

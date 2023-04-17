@@ -1,0 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/circular-std');
+
+/*@font-face {*/
+/*    font-family: "Circular Std";*/
+/*    src: url("assets/circular-std-medium-500.ttf")*/
+/*}*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.pageBody {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    width: 100%;
+    font-family: 'Circular Std', sans-serif;
+}

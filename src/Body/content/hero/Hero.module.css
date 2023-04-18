@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sono&display=swap');
 
 .heroMain {
-    background: url("/src/assets/herobg.svg");
-    border-radius: 15px;
+     background: url("/src/assets/herobg.svg"); 
+     border-radius: 15px;
     display: flex;
     height: 635px;
     margin-left: 6.5rem;
-    margin-right: 6.5rem;
-}
+    margin-right: 6.5rem; 
+} 
 
 .content {
     align-items: flex-start;
@@ -53,7 +53,6 @@
 .clickable a {
     text-decoration: none;
     color: #fff;
- 
     border-radius: 5px;
     padding: 10px;
     font-size: 1rem;
@@ -65,9 +64,47 @@
 
 .clickable a:nth-child(2):hover {
     color: #0d6efd;
-}
+} 
 
-.heroImage {
+ .heroImage {
     margin-left: 120px;
     margin-top: 50px;
+}
+
+@media (max-width:768px)
+{
+    .heroMain {
+        display: fixed;
+    /* flex-direction: column; 
+     margin-left: 6.5rem;
+    margin-right: 6.5rem;  */
+     }
+
+    /* .heroImage {
+        margin-left: 0;
+        margin-top: 0;
+    } 
+    .content {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row; */
+        /* margin-left: 4.9em;
+        margin-top: 117px; */
+        /* padding: 0;
+        width: 100%;
+    } */
+    
+
+ .heroImage {
+    display:none;
+}
+.content{
+width: auto;
+justify-content: center;
+margin-left: 2.9em;
+}
+.clickable{
+display: flex;
+gap: 20px;
+}
 }

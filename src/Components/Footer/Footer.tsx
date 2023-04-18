@@ -12,13 +12,14 @@ import {FaInstagramSquare} from 'react-icons/fa'
 
 const Footer = () => {
 const FooterContainer = styled.footer`
-background: #151f32;
+  background: #151f32;
   color: #f2f2f2;
   padding: 80px 60px;
   margin-top:80px;
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
-  }
+  width:100%;
+//   @media (max-width: 1000px) {
+//   padding: 70px 30px;
+//   }
 `;
 
 const Footerup = styled.div`
@@ -53,7 +54,6 @@ width: 40%;
     color: #d5f2f0;
       
        
-
   .footerDownloadLink {
     display: flex;
     justify-content: flex-start;

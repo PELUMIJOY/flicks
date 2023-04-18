@@ -100,3 +100,67 @@
 .downloadLink {
     display: inline-block;
 }
+
+@media (max-width: 768px) {
+    .contain {
+
+        flex-direction: column;
+        
+    }
+    /* .main {
+        animation-name: myAnimation;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    } */
+
+
+.appDownload {
+     margin: 20px; 
+    /* align-items: flex-start;  */
+    background: url(/src/assets/herobg.svg);
+    flex-direction: column;
+    width:70%;
+    height: 100%;
+    font-size: small;
+    /* border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 551px;
+    justify-content: center;
+    width: 1210px; */
+}
+
+.scan{
+    position: absolute;
+    /* top: 455px; */
+    display: none;
+    /* height: auto; */
+    /* max-width: 100%; */
+    vertical-align: middle;
+    overflow-clip-margin: none;
+    overflow: none;
+}
+.divTitle p {
+    /* color: #c0ebe9; */
+    font-size: 16px;
+    /* font-style: normal;
+    font-weight: 450;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    margin-top: 20x;
+    text-align: center; */
+}
+
+divTitle h1{
+    width: 500px;
+    /* color: white;
+    text-align: center;
+    font-style: normal;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 110%;
+    margin-bottom: 64px; */
+}
+
+}

@@ -7,13 +7,12 @@ import star from '../../../assets/Star.svg'
 export const Review = () => {
     return (
         <div className={reviewStyle.container}>
-            <div className={reviewStyle.wrapper}>
+            
                 <div className={reviewStyle.reviews}>
                     <button>❮</button>
                     <div className={reviewStyle.inner}>
-                        <div className={reviewStyle.frame1}>
-                            <div className={reviewStyle.review}>
-                                <div className={reviewStyle.section}>
+
+                    <div className={reviewStyle.section}>
                                     <div className={reviewStyle.content}>
                                         <img className={reviewStyle.memberImage} alt={"member 1"} src={member1}/>
                                         <h3>Temitope Ikushika</h3>
@@ -26,11 +25,7 @@ export const Review = () => {
                                         assists me in my day to day transactions.
                                     </p>
                                 </div>
-                            </div>
-                        </div>
 
-                        <div className={reviewStyle.frame2}>
-                            <div className={reviewStyle.review}>
                                 <div className={reviewStyle.section}>
                                     <div className={reviewStyle.content}>
                                         <img className={reviewStyle.memberImage} alt={"member 1"} src={member2}/>
@@ -42,12 +37,10 @@ export const Review = () => {
                                         depositing and withdrawing is very distinguished.
                                     </p>
                                 </div>
+                                </div>
+                                <button>❯</button>
                             </div>
                         </div>
-                    </div>
-                    <button>❯</button>
-                </div>
-            </div>
-        </div>
+                        
     )
 }

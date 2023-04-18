@@ -132,3 +132,15 @@
     letter-spacing: .2px;
     line-height: 140%;
 }
+@media (max-width:768px) {
+    .section {
+        flex-direction: column;
+    }
+
+.left {
+    align-items: center;
+    width: 77%;
+    margin-bottom: 20px;
+ 
+}
+}

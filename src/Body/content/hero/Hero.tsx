@@ -16,10 +16,11 @@ export const Hero = () => {
                     <a href="https://flickuser.page.link/userinvite">Join as a User</a>
                     <a className={heroStyle.open} href="https://flickmerchants.page.link/tV8u">Open a Business Account</a>
                 </div>
-            </div>
+                </div>
             <div className={heroStyle.heroImage}>
-                <img src={heroImage} alt={'heroImage'}/>
-            </div>
+            <img src={heroImage} alt={'heroImage'}/>
+           </div>
+            
         </div>
     )
 }

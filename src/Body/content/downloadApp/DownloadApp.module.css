@@ -15,24 +15,25 @@
 }
 
 .contain {
-    margin: 169px 107px 0 107px;
+    /* margin: 169px 107px 0 107px; */
+    margin-bottom: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
-    width: 1210px;
+    width:100%;
 }
 
 .appDownload {
-    margin: 0 -12px 0 -12px;
+    /* margin: 0 -12px 0 -12px; */
     align-items: flex-start;
     background: url(/src/assets/herobg.svg);
     border-radius: 15px;
     display: flex;
     height: 551px;
     justify-content: center;
-    width: 1210px;
+    width: 100%;
 }
 
 .divTitle {
@@ -55,14 +56,14 @@
 }
 
 .divTitle h1{
-    width: 782px;
+    /* width: 782px; */
     color: white;
     text-align: center;
     font-style: normal;
-    font-size: 64px;
+    font-size: 30px;
     font-weight: 900;
     line-height: 110%;
-    margin-bottom: 64px;
+    margin: 30px;
 }
 
 .divTitle span{
@@ -75,9 +76,10 @@
 
 .image {
     display: block;
-    height: auto;
-    max-width: 100%;
+    /* height: auto; */
+    width: 100%;
     vertical-align: middle;
+    margin: 30px;
 }
 
 .scan{

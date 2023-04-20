@@ -17,24 +17,36 @@ const FooterContainer = styled.footer`
   padding: 80px 60px;
   margin-top:80px;
   width:100%;
-//   @media (max-width: 1000px) {
-//   padding: 70px 30px;
-//   }
+  @media (max-width: 1000px) {
+  padding: 5px 35px;
+  width:90%;
+  }
 `;
 
 const Footerup = styled.div`
   display: flex;
-//   flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+   flex-direction:column;
+    }
 `;
 
 const FooterRight = styled.div`
 height:20px;
 display:flex;
+flex:1;
 flex-direction:column;
 align-items:flex-start;
 color:#fff;
-width: 40%;
+width: 35%;
+@media (max-width: 768px) {
+    text-align:left;
+    width: 100%;
+    
+    
+     }
 
   .image {
     margin-bottom: 16px;
@@ -52,6 +64,13 @@ width: 40%;
     line-height: 28px;
     margin-bottom: 24px;
     color: #d5f2f0;
+    @media (max-width: 768px) {
+        // flex-direction:row;
+        justify-content: flex-start;
+        text-align:flex-start;
+        font-size: 15px;
+    font-weight:400;
+         }
       
        
   .footerDownloadLink {
@@ -70,29 +89,44 @@ width: 40%;
 
   @media (max-width: 1000px) {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
 `;
 
 const Footermiddle = styled.div`
   display: flex;
+  flex:2;
   flex-direction: row;
   align-items: flex-start;
-  width: 75%;
+  width: 60%;
  text-align:left;
  margin-left:100px;
  border-left:1px solid white;
  margin-bottom: 40px;
  color: #d5f2f0;
+ @media (max-width: 1000px) {
+    border:none;
+    border-top:20px;
+    margin-left:0;
+    margin-bottom: 20px;
+  }
 
   .company{
 margin:0 50px;
+@media (max-width: 1000px) {
+margin:0;
+  }
+
   }
 .developer{
     margin:0 50px; 
 }
 .address{
     margin:0 50px; 
+
+    media (max-width: 1000px) {
+       padding:20px;
+          }
 }
 
   h3 {
@@ -126,7 +160,7 @@ margin:0 50px;
   .addressP{
     padding:15px;
 
-  }
+   }
 
 
 
@@ -232,8 +266,6 @@ const DeleteProfile = styled.div`
         <a className="downloadLink" href="#">
         <img className="image2"src={apple} alt={'AppleStore'}/></a>
      </div>
-     {/* <div className='break-line'></div> */}
-    <div className='break-line'></div>
     </FooterRight>
     <Footermiddle className='footer-left'>
         <div className='company'>

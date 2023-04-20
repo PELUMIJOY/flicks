@@ -12,7 +12,7 @@ export const Payment = () => {
                 </div>
             </div>
             <div className={`${bannerStyle.animated} ${bannerStyle.rightSlide}`}>
-                <img src={fastPayment} alt={'Fast Payment'}/>
+                <img className={bannerStyle.image} src={fastPayment} alt={'Fast Payment'}/>
             </div>
         </div>
     )

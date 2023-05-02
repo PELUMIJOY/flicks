@@ -3,9 +3,9 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: content-box; */
+    /* box-sizing: border-box; */
 }
 
-.main {
+/* .main {
     margin: 8rem 10.25rem 0 10.25rem;
-}
+} */

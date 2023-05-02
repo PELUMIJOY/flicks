@@ -76,6 +76,9 @@
 {
     .heroMain {
         display: fixed;
+      
+        
+; 
     /* flex-direction: column; 
      margin-left: 6.5rem;
     margin-right: 6.5rem;  */
@@ -108,4 +111,43 @@ margin-left: 2.9em;
 display: flex;
 gap: 20px;
 }
+}
+@media (max-width:280px){
+    .heroMain{
+        display: fixed;
+       margin-left: 10px; 
+       width:90%;
+      
+       /* height: 500px; */
+
+    }
+    .content{
+        width:100%;
+        margin: 10px;
+    }
+    .clickable{
+        width: 200px;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 40px; */
+        margin: auto;
+     
+    }
+
+    .bigContent {
+        /* color: #fff; */
+        font-size: 50px;
+        /* font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        margin-bottom: 32px; */
+    }
+ .open{
+    margin-bottom: 20px;
+ }
+    /* .clickable a {
+        padding: 10px;
+        font-size: 40px;
+    } */
+    
 }

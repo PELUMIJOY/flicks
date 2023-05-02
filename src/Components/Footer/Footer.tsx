@@ -7,7 +7,6 @@ import {FiFacebook} from 'react-icons/fi'
 import {CiTwitter} from 'react-icons/ci'
 import {FaLinkedin} from 'react-icons/fa'
 import {FaInstagramSquare} from 'react-icons/fa'
-// import FacebookOutlinedIcon from '@material-ui/icons/FacebookOutlined';
 
 
 const Footer = () => {
@@ -16,10 +15,13 @@ const FooterContainer = styled.footer`
   color: #f2f2f2;
   padding: 80px 60px;
   margin-top:80px;
-  width:100%;
+  width:90%;
   @media (max-width: 1000px) {
   padding: 5px 35px;
   width:90%;
+  }
+  @media (max-width: 280px){
+    width:100%;
   }
 `;
 
@@ -104,12 +106,17 @@ const Footermiddle = styled.div`
  border-left:1px solid white;
  margin-bottom: 40px;
  color: #d5f2f0;
- @media (max-width: 1000px) {
+ @media (max-width: 1024px) {
     border:none;
     border-top:20px;
     margin-left:0;
     margin-bottom: 20px;
   }
+  @media (max-width: 280px) {
+  flex-direction:column;  
+  flex:none;
+  }
+
 
   .company{
 margin:0 50px;
@@ -120,12 +127,21 @@ margin:0;
   }
 .developer{
     margin:0 50px; 
+    @media (max-width: 280px) {
+    
+      margin:0; 
+      }
 }
 .address{
-    margin:0 50px; 
+    text-align:left;
+    align-items:flex-start;
+   margin:auto;
+   width:auto;
 
-    media (max-width: 1000px) {
+    media (max-width: 1024px) {
        padding:20px;
+    
+
           }
 }
 
@@ -158,7 +174,15 @@ margin:0;
   }
 
   .addressP{
-    padding:15px;
+    padding:0 30px;
+    line-height:2rem;
+
+    @media (max-width: 280px) {
+  width:100%; 
+  padding:0 ;
+  font-size:18px;
+  font-weight:500;
+      }
 
    }
 
@@ -289,8 +313,11 @@ const DeleteProfile = styled.div`
        </div>
     <div className='address'>
         <h3>Address</h3>
-        <p className='addressP'>Nigeria: <br/>6th Floor, Landmark Towers, 5B Water Corporation Road, Victoria Island, Lagos</p>
+        {/* <div className='address2'> */}
+        <p className='addressP'>Nigeria: <br/> 6th Floor, Landmark Towers, 5B Water Corporation Road, Victoria Island, Lagos</p>
         <p className='addressP'>United States: <br/>2261 Market Street #4664 San Francisco, CA 9114</p>
+        {/* </div> */}
+        
     </div>
     </Footermiddle>
    

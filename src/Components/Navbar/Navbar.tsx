@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 
 
 import Logo from '../../assets/flick_logo.svg'
 
 const Navbar = () => {
+  const [state, setState] =useState({clicked:false})
+  const handleClick =() =>{
+    setState(state =>({
+      clicked:!state.clicked
+    }))
+  }
     const Container=styled.div`
     display:flex;
     justify-content:space-between;
@@ -14,18 +20,33 @@ const Navbar = () => {
     font-family: 'Circular Std', sans-serif;
     font-weight: 450;
     box-shadow: 0 2px 10px 0 rgba(0,0,0,.1);
-    height: 3rem;
+    height: 5rem;
     line-height: 60px;
+    @media(max-width:768px){
+      justify-content:space-around;
+      width:100%;
+      padding:0;
+    }
+    @media(max-width:280px){
+      justify-content:space-between;
+      padding:0;
+      margin:0;
+    }
     `
     const Navbar=styled.div`
     display:inline-flex;
     justify-content:space-between;
     align-item:center;
     height:50%;
-  .link {
+  #linked {
     list-style: none;
-   
+    display:flex;
     inline-height:10px;
+  
+  }
+  .link {
+   display:flex;
+   flex-direction:column;
   
   }
     .navLink{
@@ -67,30 +88,43 @@ const Navbar = () => {
 
     }
 
-    // .navLink a::before{
-    //     content:"";
-    //     position: absolute;
-    //    left: 0;
-    //    bottom: -9px;
-    //    width: 0;
-    //     height: 2px;
-    //     background-color: darkcyan;
-    //     transition: width 0.5s ease-in-out;
-    //     color:red;
-    // }
-
-    // .navLink a:hover::before {
-    //     width: 100%;
-    // }
-
+    #mobile{
+      display: none;
+    }
+  
+     @media(max-width:768px){
+      #linked {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-self: start;
+        position: fixed;
+        top:90px;
+        right: -200px;
+        width: 200px;
+        height:40vh;
+        background-color:white;
+      }
+   #linked.active{
+          right: 0px;
+        }
+  
+      #mobile{
+        display: block;
+       }
+       #mobile i{
+      font-size: 24px;
+       } 
     `
+    
   return (
     <Container>
 <img src={Logo} alt="Logo" />
-        <Navbar>
-            <li className='link'> <a className="navLink" href="#">Business </a> </li>
-            <li className='link'><a className="navLink" href="#">Pricing</a></li>
-            <li className='link'><a className="navLink" href="#">About us<span>&#8964;</span></a>
+        <Navbar id='rightNav' className={state.clicked ? "#rightNav active": "rightNav"}>
+          <ul id="linked" className={state.clicked ? "#linked active": "linked"}>
+          <li className='link'> <a className="navLink" href="#">Business </a> </li>
+            <li className='link'> <a className="navLink" href="#">Pricing</a></li>
+            <li className='link' ><a className="navLink" href="#">About us<span>&#8964;</span></a>
             <div className="dropdown">
                             <a className="Link" href="#">About us</a>
                             <a className="Link" href="#">Careers on flick</a>
@@ -103,6 +137,12 @@ const Navbar = () => {
                             <a className="Link" href="#">Api Documentation</a>
                         </div>
                     </li>
+          </ul>
+            
+
+                    <div id='mobile' onClick={ handleClick }>
+            <i id='bar' className={state.clicked ? 'fas fa-times':'fas fa-bars'}></i>
+ </div>
 
         </Navbar>
        

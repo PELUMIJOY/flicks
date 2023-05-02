@@ -15,14 +15,14 @@
 }
 
 .contain {
-    /* margin: 169px 107px 0 107px; */
+    margin: 169px 107px 0 107px;
     margin-bottom: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
-    width:100%;
+    width:90%;
 }
 
 .appDownload {
@@ -165,4 +165,18 @@ divTitle h1{
     margin-bottom: 64px; */
 }
 
+}
+
+@media(max-width:280px){
+    .contain {
+        margin: 10px;
+    }
+    .appDownload{
+        width: 100%;
+    }
+    .image {
+      
+        width: 80%;
+        margin: 10px;
+    }
 }

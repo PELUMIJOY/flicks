@@ -39,11 +39,23 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+
   
 }
 
 body{
   width: 100%;
-  /* border: 1px solid red; */
+  
+}
+@media(
+  max-width:1024px){
+  body{
+    width:100%;
+  }
+ 
+}
+@media( max-width:280px){
+  body{
+    width:100%;
+  }
 }

@@ -8,7 +8,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 .trustAnimation {
@@ -85,7 +85,7 @@
     color: #2ebdb6;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .title {
       max-width: 60%; /* Increase width on larger screens */
     }
@@ -96,4 +96,44 @@
       width: 25%; /* Increase width on larger screens */
       max-width: none; /* Remove max-width limit */
     }
+
+   
+  }
+  @media screen and (max-width: 280px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .title{
+        width: 200px;
+    }
+    .inner{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        /* padding: 12px; */
+      
+    }
+    .count{
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        
+    }
+    .count h1{
+        font-size: 18px;
+     
+    }
+    .count p {
+       text-align: start;
+        line-height: 15px;
+        font-size: 10px;
+    }
+    .metrics {
+        display: flex;
+        justify-content: space-evenly;
+    
+    }
+    
   }

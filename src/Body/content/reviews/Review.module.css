@@ -170,5 +170,21 @@
         width: 100%;
     /* height: 0; */
     }
+    
 
+}
+@media(max-width:280px)
+   { 
+    .content{
+        height:100%;
+    }
+
+    .comment {
+        font-size: 10px;
+        
+    }
+    
+    .quote{
+        display: none;
+    }
 }
